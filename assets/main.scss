@@ -4,6 +4,7 @@
 
 //@import "minima";
 
+// http://darktef.github.io/posts/2017-03-offset-html-anchors-for-fixed-header-with-css
 :target {
   display: block;
   position: relative;
@@ -53,16 +54,19 @@ html, body {
   background-image: url(https://source.unsplash.com/random?code);
 }
 .section-placeholder:nth-of-type(3) {
-  background-image: url(https://source.unsplash.com/random?process);
+  background-image: url(https://source.unsplash.com/random?industrial,manufacturing);
 }
 .section-placeholder:nth-of-type(4) {
   background-image: url(https://source.unsplash.com/random?biotech);
 }
 .section-placeholder:nth-of-type(5) {
-  background-image: url(https://source.unsplash.com/random?pharmaceutical);
+  background-image: url(https://source.unsplash.com/random?industrial,team);
 }
 .section-placeholder:nth-of-type(6) {
-  background-image: url(https://source.unsplash.com/random?phone);
+  background-image: url(https://source.unsplash.com/random?pharmaceutical);
+}
+.section-placeholder:nth-of-type(7) {
+  background-image: url(https://source.unsplash.com/random?medicine,pills);
 }
 
 @import "./yue.css";
