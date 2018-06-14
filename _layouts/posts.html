@@ -13,7 +13,7 @@ layout: default
     {%- if site.posts.size > 0 -%}
       <h2 class="post-list-heading dn">{{ page.list_title | default: "Posts" }}</h2>
       {%- for post in site.posts -%}
-        <article class="pv4 bb b--black-10 ph3 ph0-l">
+        <article class="pv4 bb b--black-10">
           <a class="post-link link" href="{{ post.url | relative_url }}">
             <div class="flex flex-column flex-row-ns">
               <div class="w-100 pr3-ns order-2 order-1-ns">
