@@ -91,3 +91,13 @@ html, body {
   max-width: 900px;
   margin: 0 auto;
 }
+
+.menu {
+  transform: translateY(-400px);
+  transition: transform .1s ease-in-out;
+  z-index: -1;
+}
+
+.menu--open {
+  transform: translateY(0);
+}
