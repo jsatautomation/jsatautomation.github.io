@@ -14,25 +14,25 @@ layout: default
       <h2 class="post-list-heading dn">{{ page.list_title | default: "Posts" }}</h2>
       {%- for post in site.posts -%}
         <article class="pv4 bb b--black-10 ph3 ph0-l">
-          <div class="flex flex-column flex-row-ns">
-            <div class="w-100 pr3-ns order-2 order-1-ns">
-              <h3 class="f3 mt0 lh-title">
-                <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-link link" href="{{ post.url | relative_url }}">
+            <div class="flex flex-column flex-row-ns">
+              <div class="w-100 pr3-ns order-2 order-1-ns">
+                <h3 class="f3 mt0 lh-title">
                   {{ post.title | escape }}
-                </a>
-              </h3>
-              <p class="f5 f4-l lh-copy">
-                {%- if site.show_excerpts -%}
-                  {{ post.excerpt }}
-                {%- endif -%}
-              </p>
+                </h3>
+                <p class="f5 f4-l lh-copy">
+                  {%- if site.show_excerpts -%}
+                    {{ post.excerpt }}
+                  {%- endif -%}
+                </p>
+              </div>
+              <div class="dn pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+                <img src="http://mrmrs.github.io/photos/whale.jpg" class="db" alt="Photo of a whale's tale coming crashing out of the water.">
+              </div>
             </div>
-            <div class="dn pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-              <img src="http://mrmrs.github.io/photos/whale.jpg" class="db" alt="Photo of a whale's tale coming crashing out of the water.">
-            </div>
-          </div>
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <time class="f6 db gray">{{ post.date | date: date_format }}</time>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <time class="f6 db gray">{{ post.date | date: date_format }}</time>
+          </a>
         </article>
       {%- endfor -%}
 
