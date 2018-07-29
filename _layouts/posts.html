@@ -23,12 +23,10 @@ layout: default
                 </h3>
                 <p class="f5 f4-l lh-copy">
                   {%- if site.show_excerpts -%}
-                    {{ post.excerpt }}
+                    {{ post.excerpt | truncatewords: 50}}
                   {%- endif -%}
+                  <span class='ml1 blue underline-hover'>Click to read more.</span>
                 </p>
-              </div>
-              <div class="dn pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-                <img src="http://mrmrs.github.io/photos/whale.jpg" class="db" alt="Photo of a whale's tale coming crashing out of the water.">
               </div>
             </div>
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
