@@ -11,6 +11,7 @@ layout: default
     {{ content }}
 
     {%- if site.posts.size > 0 -%}
+
       <h2 class="post-list-heading dn">{{ page.list_title | default: "Posts" }}</h2>
       {%- for post in site.posts -%}
         <article class="pv4 bb b--black-10">
